@@ -1,0 +1,240 @@
+.navBar {
+  width: 100%;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+}
+.navBar .navOne {
+  margin: 0 auto;
+  width: 80%;
+  height: 53px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.navBar .navOne .nav-pages {
+  width: 60%;
+  display: flex;
+  gap: 10%;
+  justify-items: center;
+  align-items: center;
+}
+.navBar .navOne .nav-pages p:hover {
+  position: relative;
+  text-decoration: none;
+  color: black;
+}
+.navBar .navOne .nav-pages p::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 1.5px;
+  background-color: black;
+  transition: width 0.5s ease-out;
+}
+.navBar .navOne .nav-pages p:hover::after {
+  width: 98%;
+}
+.navBar .navOne .nav-pages img {
+  max-width: 150px;
+  height: 33px;
+  max-height: 70px;
+  width: 150px;
+}
+.navBar .navOne .nav-pages img:hover {
+  scale: 1.1;
+  transition: scale 0.3s ease-out;
+}
+.navBar .navOne .nav-icon {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.navBar .navOne .nav-icon i svg:hover {
+  fill: gray;
+  transition: fill 0.2s ease;
+}
+.navBar .navTwo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(255, 0, 0, 0.781);
+  margin: 0 auto;
+  gap: 13%;
+  width: 100%;
+}
+.navBar .navTwo .category {
+  display: flex;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  color: white;
+  width: 120px;
+  height: 53px;
+  padding: 0 5px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.navBar .navTwo .category:hover {
+  background-color: rgba(255, 102, 102, 0.781);
+  transition: background-color 0.3s ease;
+}
+.navBar .navTwo .category i svg {
+  width: 25px;
+  height: 25px;
+  fill: white;
+}
+.navBar .navTwo .category i .icon-caret {
+  height: 8px;
+  width: 8px;
+  align-self: center;
+  margin: 0 auto;
+  margin-bottom: 3px;
+}
+.navBar .navTwo .category p {
+  font-size: 16px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+}
+.navBar .navTwo .search {
+  display: flex;
+  background-color: white;
+  align-items: center;
+  border-radius: 20px;
+  padding: 3px;
+  width: 30%;
+  min-width: 200px;
+  height: auto;
+}
+.navBar .navTwo .search i {
+  margin: 0 auto;
+}
+.navBar .navTwo .search i svg:hover {
+  fill: black;
+  transition: fill 0.2s ease;
+}
+.navBar .navTwo .search input {
+  width: 90%;
+  background-color: white;
+  margin-left: 3px;
+  border: none;
+  color: black;
+}
+.navBar .navTwo .search input:focus {
+  outline: none;
+  border: none;
+}
+.navBar .navTwo .sides {
+  display: flex;
+  flex-direction: row;
+  gap: 25px;
+}
+.navBar .navTwo .sides .side {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-align: center;
+  gap: 5px;
+}
+.navBar .navTwo .sides .side:hover {
+  background-color: rgba(255, 102, 102, 0.781);
+  transition: background-color 0.3s ease;
+}
+.navBar .navTwo .sides .side i {
+  margin-top: 7px;
+}
+@media (max-width: 768px) {
+  .navBar .navOne {
+    width: 100%;
+  }
+  .navBar .navOne .nav-pages p {
+    display: none;
+  }
+  .navBar .navTwo .category {
+    display: none;
+  }
+  .navBar .navTwo .search {
+    width: 50%;
+  }
+  .navBar .navTwo .sides .side p {
+    display: none;
+  }
+  .navBar .navTwo .sides .side .icon-caret {
+    display: none;
+  }
+}
+
+.HomePage {
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  padding: 0;
+  margin: 0 auto;
+}
+.HomePage .sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.HomePage .sidebar ul li {
+  width: 200px;
+  background-color: white;
+  color: #1e1e1e;
+  list-style-type: none;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  padding-right: 40px;
+}
+.HomePage .sidebar ul li:hover {
+  background-color: #e6e6e6;
+  border-radius: 20px;
+}
+.HomePage .sidebar ul p {
+  align-self: center;
+  margin-left: 10px;
+  padding-top: 4px;
+}
+.HomePage .sidebar i {
+  width: 20px;
+  height: 20px;
+}
+.HomePage .sidebar i svg {
+  fill: rgba(30, 30, 30, 0.4784313725);
+}
+.HomePage .home-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 80%;
+}
+
+@media (max-width: 769px) {
+  .HomePage .home-top {
+    display: none;
+  }
+}
+body {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+.root {
+  margin: 0;
+  padding: 0;
+}
+
+.App {
+  width: 100%;
+  height: 100vh;
+}/*# sourceMappingURL=styles.css.map */
