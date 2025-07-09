@@ -1,12 +1,13 @@
 @use 'navbar';
 @use 'homepage';
-
-
+@use 'productCard';
+@use 'footer';
 body{
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .root{
       margin: 0;
