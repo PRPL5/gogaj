@@ -9,10 +9,10 @@ function NavBar() {
 
 
                 <section className="nav-pages">
-                   <Link to="/gogaj"><img src={gogajLogo} alt="" /></Link> 
+                   <Link to="/gogaj/"><img src={gogajLogo} alt="" /></Link> 
                     <p><Link  className="Link" to="/products">Te rejat</Link></p>
                     <p><Link  className="Link" to="/products">Me te shiturat</Link></p>
-                    <p>Contact</p>
+                    <p><Link className="Link">Contact</Link></p>
                 </section>
                 <section className="nav-icon">
                     <i><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#000000"><path d="M160-160v-320h160v320H160Zm240 0v-640h160v640H400Zm240 0v-440h160v440H640Z" /></svg></i>
