@@ -64,7 +64,7 @@ const Footer = () => {
       </div>
 
       <div className="footer__bottom">
-        <p>© GOGAJ</p>
+        <p>© GOGAJ Powered by Jakub Demaliaj</p>
         <div className="footer__payments">
           <img src="https://gogaj.com/assets/static/mclogo.png" alt="MasterCard" />
           <img src="https://gogaj.com/assets/static/Visalogo.png" alt="Visa" />

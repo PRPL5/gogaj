@@ -154,7 +154,7 @@
         }
       }
       input {
-        width: 90%;
+        width: 100%;
         background-color: white;
         margin-left: 3px;
         border: none;
@@ -188,7 +188,7 @@
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 900px) {
     .navOne{
       width: 100%;
         .nav-pages{
